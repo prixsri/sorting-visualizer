@@ -170,7 +170,7 @@ export function useSortingVisualizer(
 
   // Clean up celebration animation
   const clearCelebration = useCallback(() => {
-    if (celebrationRafRef.current) {
+    if (celebrationRafRef.current !== null) {
       cancelAnimationFrame(celebrationRafRef.current);
       celebrationRafRef.current = null;
     }
@@ -190,6 +190,12 @@ export function useSortingVisualizer(
 
   const pause = useCallback(() => {
     setIsPlaying(false);
+    if (rafIdRef.current !== null) {
+      cancelAnimationFrame(rafIdRef.current);
+      rafIdRef.current = null;
+    }
+    lastTimeRef.current = null;
+    accumulatorRef.current = 0;
   }, []);
 
   const togglePlay = useCallback(() => {
@@ -281,7 +287,7 @@ export function useSortingVisualizer(
   // Playback loop via requestAnimationFrame with step batching at high speeds
   useEffect(() => {
     if (!isPlaying) {
-      if (rafIdRef.current) {
+      if (rafIdRef.current !== null) {
         cancelAnimationFrame(rafIdRef.current);
         rafIdRef.current = null;
       }
@@ -326,7 +332,7 @@ export function useSortingVisualizer(
     rafIdRef.current = requestAnimationFrame(loop);
 
     return () => {
-      if (rafIdRef.current) {
+      if (rafIdRef.current !== null) {
         cancelAnimationFrame(rafIdRef.current);
         rafIdRef.current = null;
       }
