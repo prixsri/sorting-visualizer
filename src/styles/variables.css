@@ -1,0 +1,95 @@
+:root {
+  /* ==========================================================================
+     Sorting Visualizer Design Tokens
+     A high-precision, dark computational studio aesthetic
+     ========================================================================== */
+
+  /* Surface & Canvas System */
+  --bg-canvas: #090b0e;
+  --bg-subtle: #0e1218;
+  --bg-surface: #141821;
+  --bg-surface-elevated: #1a202c;
+  --bg-surface-active: #242c3d;
+  --bg-glass: rgba(20, 24, 33, 0.82);
+
+  /* Boundary & Division */
+  --border-hairline: rgba(255, 255, 255, 0.06);
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-medium: rgba(255, 255, 255, 0.16);
+  --border-strong: rgba(255, 255, 255, 0.28);
+  --border-focus: #6366f1;
+
+  /* Typography Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-dim: #475569;
+  --text-inverse: #090b0e;
+
+  /* Primary Interactive Action (Hero buttons & highlights) */
+  --accent-primary: #4f46e5;
+  --accent-primary-light: #6366f1;
+  --accent-primary-hover: #4338ca;
+  --accent-primary-glow: rgba(79, 70, 229, 0.4);
+
+  /* Functional Algorithmic Signals */
+  /* Neutral / Dormant elements */
+  --bar-default-top: #64748b;
+  --bar-default-bottom: #334155;
+  --bar-default-border: rgba(255, 255, 255, 0.1);
+
+  /* Active Comparison (Cadmium / Amber Gold) */
+  --signal-compare: #f59e0b;
+  --signal-compare-surface: rgba(245, 158, 11, 0.14);
+  --signal-compare-border: rgba(245, 158, 11, 0.5);
+  --signal-compare-glow: rgba(245, 158, 11, 0.4);
+
+  /* Mutation / Swapping / Writing (Laser Crimson / Rose) */
+  --signal-swap: #f43f5e;
+  --signal-swap-surface: rgba(244, 63, 94, 0.14);
+  --signal-swap-border: rgba(244, 63, 94, 0.5);
+  --signal-swap-glow: rgba(244, 63, 94, 0.4);
+
+  /* Partition Pivot / Boundary (Electric Cyan / Azure) */
+  --signal-pivot: #06b6d4;
+  --signal-pivot-surface: rgba(6, 182, 212, 0.14);
+  --signal-pivot-border: rgba(6, 182, 212, 0.5);
+  --signal-pivot-glow: rgba(6, 182, 212, 0.4);
+
+  /* Subarray Range */
+  --signal-range-bg: rgba(6, 182, 212, 0.08);
+  --signal-range-border: rgba(6, 182, 212, 0.3);
+
+  /* In-Position & Sorted Final State (Luminous Mint / Emerald) */
+  --signal-sorted: #10b981;
+  --signal-sorted-surface: rgba(16, 185, 129, 0.14);
+  --signal-sorted-border: rgba(16, 185, 129, 0.5);
+  --signal-sorted-glow: rgba(16, 185, 129, 0.4);
+
+  /* Final Completion Sweep */
+  --signal-celebrate: #34d399;
+  --signal-celebrate-glow: rgba(52, 211, 153, 0.55);
+
+  /* Typography Families */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Precision Radii */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-pill: 9999px;
+
+  /* Shadows & Depth */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 6px 24px -4px rgba(0, 0, 0, 0.55);
+  --shadow-elevation: 0 12px 36px -8px rgba(0, 0, 0, 0.7);
+
+  /* Motion Curves */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 120ms;
+  --duration-normal: 220ms;
+}
